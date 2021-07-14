@@ -4,11 +4,11 @@
  * file COPYING or https://www.opensource.org/licenses/mit-license.php.*
  ***********************************************************************/
 
-#ifndef _SECP256K1_MODULE_EXTRAKEYS_TESTS_EXHAUSTIVE_
-#define _SECP256K1_MODULE_EXTRAKEYS_TESTS_EXHAUSTIVE_
+#ifndef SECP256K1_MODULE_EXTRAKEYS_TESTS_EXHAUSTIVE_H
+#define SECP256K1_MODULE_EXTRAKEYS_TESTS_EXHAUSTIVE_H
 
 #include "src/modules/extrakeys/main_impl.h"
-#include "include/secp256k1_extrakeys.h"
+#include "../../../include/secp256k1_extrakeys.h"
 
 static void test_exhaustive_extrakeys(const secp256k1_context *ctx, const secp256k1_ge* group) {
     secp256k1_keypair keypair[EXHAUSTIVE_TEST_ORDER - 1];
